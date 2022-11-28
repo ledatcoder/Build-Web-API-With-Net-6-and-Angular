@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\CSharp_Agular\\Infrastructure\\Infrastructure.csproj": {}
+    "D:\\CSharp_Agular\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "d:\\CSharp_Agular\\Core\\Core.csproj": {
+    "D:\\CSharp_Agular\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\CSharp_Agular\\Core\\Core.csproj",
+        "projectUniqueName": "D:\\CSharp_Agular\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "d:\\CSharp_Agular\\Core\\Core.csproj",
+        "projectPath": "D:\\CSharp_Agular\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "d:\\CSharp_Agular\\Core\\obj\\",
+        "outputPath": "D:\\CSharp_Agular\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "d:\\CSharp_Agular\\Infrastructure\\Infrastructure.csproj": {
+    "D:\\CSharp_Agular\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\CSharp_Agular\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "D:\\CSharp_Agular\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "d:\\CSharp_Agular\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "D:\\CSharp_Agular\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "d:\\CSharp_Agular\\Infrastructure\\obj\\",
+        "outputPath": "D:\\CSharp_Agular\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +83,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "d:\\CSharp_Agular\\Core\\Core.csproj": {
-                "projectPath": "d:\\CSharp_Agular\\Core\\Core.csproj"
+              "D:\\CSharp_Agular\\Core\\Core.csproj": {
+                "projectPath": "D:\\CSharp_Agular\\Core\\Core.csproj"
               }
             }
           }
