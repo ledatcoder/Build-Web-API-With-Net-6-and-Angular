@@ -1,3 +1,4 @@
 {
-    "commentTranslate.targetLanguage": "vi"
+    "commentTranslate.targetLanguage": "vi",
+    "angular.enable-strict-mode-prompt": false
 }
