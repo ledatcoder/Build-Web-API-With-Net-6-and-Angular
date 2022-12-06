@@ -1,16 +1,5 @@
 $gradient-start :#ed6ea0;
 $gradient-end :#ec8c69;
-body{
-    display: flex;
-    height: 100vh;
-    padding: 0 5rem;
-    box-sizing: border-box;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    background-image: #fff;
-    font-family: 'Open Sans', sans-serif;
-}
 .menu{
   background-image: linear-gradient(to right, $gradient-start 0%, $gradient-end 100%);
   border-radius:0.5rem;
@@ -326,20 +315,6 @@ button {
   }
 }
 
-//=== Pen styling, ignore
-body {
-  color: #fff;
-  background: hsl(227, 10%, 10%);
-  font: 300 5em 'Fira Sans', sans-serif;
-  font-weight: 400;
-  // Center everything ever
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 100vh;
-  display: flex;
-}
 
 // Basic button styles
 button {
@@ -371,3 +346,4 @@ a {
     outline: none;
   }
 }
+

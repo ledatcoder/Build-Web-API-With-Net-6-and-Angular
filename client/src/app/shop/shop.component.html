@@ -1,4 +1,8 @@
-<div class="container">
+<head>
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+ </head>
+<div class="container mt-5">
   <div class="row">
     <section class="col-3">
       <h5 class="text-warning ml-3">Sort</h5>
@@ -10,7 +14,7 @@
           {{ sort.name }}
         </option>
       </select>
-      <h5 class="text-warning ml-3">Brands</h5>
+      <h5 class="text-warning ml-3"><button class="glow-on-hover">Brands</button></h5>
       <ul class="list-group my-3">
         <li
           class="list-group-item"
@@ -44,21 +48,23 @@
           [pageNumber]="this.shopParams.pageNumber"
           [pageSize]="this.shopParams.pageSize"
         ></app-paging-header>
-        <div class="form-inline mt-2">
-          <input
-            (keyup.enter)="onSearch()"
-            class="form-control mr-2"
-            #search
-            style="width: 400px"
+        <div class="form-inline mt-2 ">
+          <!-- <div class="search-container">
+            <input (keyup.enter)="onSearch()" class="form-control mr-2 search-input search-btn" #search
             placeholder="Search"
             type="text"
           />
-          <button class="btn btn-outline-primary my-2" (click)="onSearch()">
+          </div> -->
+          <div class="search-container">
+            <input type="text" (keyup.enter)="onSearch()" #search name="search" placeholder="Search..." class="search-input">
+            <a class="search-btn"><i class="fas fa-search"></i></a>
+        </div>
+          <!-- <button class="btn btn-outline-primary my-2 search-btn" (click)="onSearch()">
             Search
           </button>
-          <button class="btn btn-outline-success ml-2 my-2" (click)="onReset()">
+          <button class="btn btn-outline-success ml-2 my-2 search-btn" (click)="onReset()">
             Reset
-          </button>
+          </button> -->
         </div>
       </div>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
