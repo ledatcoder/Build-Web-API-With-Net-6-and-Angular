@@ -1,2 +1,20 @@
-
-
+<nav class="menu">
+  <ol>
+    <img src="/assets/images/logo1.png" style="max-height:110px" [hspace]="170" alt="logo" class="logo" routerLink="/">
+    <li class="menu-item">
+      <a href="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+    </li>
+    <li class="menu-item">
+      <a href="/shop" routerLinkActive="active">Shop</a>
+    </li>
+    <li class="menu-item"><a routerLink="/test-error" routerLinkActive="active">Errors</a></li>
+    <div class="d-flex align-items-center">
+      <a class="position-relative">
+        <i class="fa fa-shopping-cart fa-2x mr-5 text-dark"></i>
+        <div class="cart-no">5</div>
+      </a>
+      <button class="raise">Login</button>
+      <button class="raise">Sign Up</button>
+    </div>
+  </ol>
+</nav>

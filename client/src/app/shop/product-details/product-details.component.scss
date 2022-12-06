@@ -1,10 +1,3 @@
-.btn-group {
-    width: 100%;
-}
-
-.btn {
-    width: 50%;
-}
 .fill:hover,
 .fill:focus {
   box-shadow: inset 0 0 0 2em var(--hover);
@@ -92,13 +85,13 @@ button {
   &:hover,
   &:focus { 
     border-color: var(--hover);
-    color: #fff;
+    color: rgb(242, 10, 250);
   }
 }
 
 //=== Pen styling, ignore
 body {
-  color: #fff;
+  color:rgb(242, 10, 250);
   background: hsl(227, 10%, 10%);
   font: 300 1em 'Fira Sans', sans-serif;
   
@@ -127,3 +120,5 @@ code {
   color: #e4cb58;
   font: inherit;
 }
+
+
