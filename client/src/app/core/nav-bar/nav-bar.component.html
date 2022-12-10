@@ -1,20 +1,21 @@
 <nav class="menu">
   <ol>
-    <img src="/assets/images/logo1.png" style="max-height:110px" [hspace]="170" alt="logo" class="logo" routerLink="/">
-    <li class="menu-item">
-      <a href="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+    <img src="/assets/images/giphy.gif" style="max-height:110px;" [hspace]="0" alt="logo " class="logo" routerLink="/">
+    <img src="/assets/images/logo4.jpg" style="max-height:110px" [hspace]="0" alt="logo" class="logo" routerLink="/">
+    <li class="menu-item ">
+      <a href="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true } " class="glow-on-hover">Home</a>
     </li>
     <li class="menu-item">
-      <a href="/shop" routerLinkActive="active">Shop</a>
+      <a href="/shop" routerLinkActive="active" class="glow-on-hover">Shop</a>
     </li>
-    <li class="menu-item"><a routerLink="/test-error" routerLinkActive="active">Errors</a></li>
-    <div class="d-flex align-items-center">
-      <a class="position-relative">
-        <i class="fa fa-shopping-cart fa-2x mr-5 text-dark"></i>
-        <div class="cart-no">5</div>
+    <li class="menu-item"><a routerLink="/test-error" routerLinkActive="active" class="glow-on-hover">Errors</a></li>
+    <div class="d-flex align-items-center color1 ">
+      <a routerLink="/basket" class="position-relative" >
+        <i class="fa fa-shopping-cart fa-2x mr-5 text-dark "></i>
+        <div *ngIf="(basket$ | async) as basket" class="cart-no">{{basket.items.length}}</div>
       </a>
-      <button class="raise">Login</button>
-      <button class="raise">Sign Up</button>
+      <button class="raise ">Login</button>
+      <button class="raise ">Sign Up</button>
     </div>
   </ol>
 </nav>

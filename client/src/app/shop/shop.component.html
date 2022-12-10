@@ -2,10 +2,10 @@
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
  </head>
-<div class="container mt-5">
+<div class="container mt-5 card  ">
   <div class="row">
     <section class="col-3">
-      <h5 class="text-warning ml-3">Sort</h5>
+      <h5 class="text-warning ml-3 "><button class="glow-on-hover">Sort</button></h5>
       <select
         class="custom-select mb-3"
         (change)="onSortSelected($event.target.value)"
@@ -14,7 +14,7 @@
           {{ sort.name }}
         </option>
       </select>
-      <h5 class="text-warning ml-3"><button class="glow-on-hover">Brands</button></h5>
+      <h5 class="text-warning ml-3"><button class="glow-on-hover" >Brands</button></h5>
       <ul class="list-group my-3">
         <li
           class="list-group-item"
@@ -27,7 +27,7 @@
           {{ brand.name }}
         </li>
       </ul>
-      <h5 class="text-warning ml-3">Types</h5>
+      <h5 class="text-warning ml-3"><button class="glow-on-hover">Types</button></h5>
       <ul class="list-group my-3">
         <li
           class="list-group-item"

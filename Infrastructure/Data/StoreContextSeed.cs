@@ -1,5 +1,11 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Text.Json;
+using System.Threading.Tasks;
 using Core.Entities;
+using Core.Entities.OrderAggregate;
 using Microsoft.Extensions.Logging;
 
 namespace Infrastructure.Data
@@ -12,14 +18,19 @@ namespace Infrastructure.Data
             {
                 if (!context.ProductBrands.Any())
                 {
-                    var brandsData = File.ReadAllText("../Infrastructure/Data/SeedData/brands.json");
+                    var brandsData =
+                        File.ReadAllText("../Infrastructure/Data/SeedData/brands.json");
+
                     var brands = JsonSerializer.Deserialize<List<ProductBrand>>(brandsData);
+
                     foreach (var item in brands)
                     {
                         context.ProductBrands.Add(item);
                     }
+
                     await context.SaveChangesAsync();
                 }
+
                 if (!context.ProductTypes.Any())
                 {
                     var typesData =
@@ -49,8 +60,23 @@ namespace Infrastructure.Data
 
                     await context.SaveChangesAsync();
                 }
+
+                if (!context.DeliveryMethods.Any())
+                {
+                    var dmData =
+                        File.ReadAllText("../Infrastructure/Data/SeedData/delivery.json");
+
+                    var methods = JsonSerializer.Deserialize<List<DeliveryMethod>>(dmData);
+
+                    foreach (var item in methods)
+                    {
+                        context.DeliveryMethods.Add(item);
+                    }
+
+                    await context.SaveChangesAsync();
+                }
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
                 var logger = loggerFactory.CreateLogger<StoreContextSeed>();
                 logger.LogError(ex.Message);

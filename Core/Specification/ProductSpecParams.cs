@@ -1,7 +1,6 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
-#nullable disable
 
 namespace Core.Specification
 {

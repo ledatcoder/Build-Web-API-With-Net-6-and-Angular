@@ -13,3 +13,5 @@ d:\CSharp_Agular\Infrastructure\obj\Debug\net7.0\Infrastructure.dll
 d:\CSharp_Agular\Infrastructure\obj\Debug\net7.0\refint\Infrastructure.dll
 d:\CSharp_Agular\Infrastructure\obj\Debug\net7.0\Infrastructure.pdb
 d:\CSharp_Agular\Infrastructure\obj\Debug\net7.0\ref\Infrastructure.dll
+D:\CSharp_Agular\Infrastructure\bin\Debug\net7.0\Infrastructure.runtimeconfig.json
+D:\CSharp_Agular\Infrastructure\obj\Debug\net7.0\Infrastructure.genruntimeconfig.cache
