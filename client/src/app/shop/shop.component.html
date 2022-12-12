@@ -49,22 +49,10 @@
           [pageSize]="this.shopParams.pageSize"
         ></app-paging-header>
         <div class="form-inline mt-2 ">
-          <!-- <div class="search-container">
-            <input (keyup.enter)="onSearch()" class="form-control mr-2 search-input search-btn" #search
-            placeholder="Search"
-            type="text"
-          />
-          </div> -->
           <div class="search-container">
             <input type="text" (keyup.enter)="onSearch()" #search name="search" placeholder="Search..." class="search-input">
             <a class="search-btn"><i class="fas fa-search"></i></a>
         </div>
-          <!-- <button class="btn btn-outline-primary my-2 search-btn" (click)="onSearch()">
-            Search
-          </button>
-          <button class="btn btn-outline-success ml-2 my-2 search-btn" (click)="onReset()">
-            Reset
-          </button> -->
         </div>
       </div>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">

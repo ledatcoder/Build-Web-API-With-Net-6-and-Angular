@@ -1,12 +1,34 @@
 <div class="row" *ngIf="product">
-  <div class="col-6">
-    <img
-      src="{{ product.pictureUrl }}"
-      alt="{{ product.name }}"
-      class="img-fluid w-100"
-    />
+  <div class="col-9">
+    <div class="container">
+      <div class="card">
+          <div class="imgBx">
+            <img
+            src="{{ product.pictureUrl }}"
+            alt="{{ product.name }}"
+            class="img-fluid w-100"
+          />
+          </div>
+          <div class="contentBx">
+              <div class="size">
+                  <h3>Size :</h3>
+                  <span>7</span>
+                  <span>8</span>
+                  <span>9</span>
+                  <span>10</span>
+              </div>
+              <div class="color">
+                  <h3>Color :</h3>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+          </div>
+      </div>
   </div>
-  <div class="col-6">
+    
+  </div>
+  <div class="col-3">
     <h3>{{ product.name }}</h3>
     <p>{{ product.price | currency }}</p>
     <div class="d-flex justify-content-start align-items-center">
@@ -25,7 +47,7 @@
       ></i>
       <button
         (click)="addItemToBasket()"
-        class="btn btn-outline-primary btn-lg ml-4 pulse"
+        class="btn btn-outline-primary btn-lg ml-4 pulse" pulse
       >
         Add to Cart
       </button>
