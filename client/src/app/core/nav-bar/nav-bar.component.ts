@@ -10,6 +10,7 @@ import { BasketService } from 'src/app/basket/basket.service';
 })
 export class NavBarComponent implements OnInit {
   basket$: Observable<IBasket>;
+currentUser$: any;
   constructor(private basketService: BasketService) { }
   ngOnInit() {
       this.basket$ = this.basketService.basket$;
